@@ -1,0 +1,66 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  basicTimeStep 16
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.9842542630538967 -0.16957735854492179 -0.04987048354645728 5.702489671525789
+  position 0.3291012676072554 1.2441299046526466 1.8177020565156938
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 1 1
+}
+WoodenBox {
+  translation -0.39 0.05 -0.44
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.4 0.05 0.34
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.29 0.05 0.14
+  name "wooden box(3)"
+  size 0.1 0.1 0.1
+}
+E-puck {
+  hidden position_0_0 776.0029229078596
+  hidden position_0_1 888.005092952213
+  hidden linearVelocity_0 0.05537340621343439 -1.3444415856157223e-07 -0.010360710118444881
+  hidden angularVelocity_0 -0.00013739979678666732 0.09028901730252659 -0.0008485411357961525
+  hidden translation_1 -0.026 0.02 0
+  hidden rotation_1 1 0 0 3.1120551824091667
+  hidden linearVelocity_1 0.05307042209018167 1.9046688848337277e-07 -0.00992876682160394
+  hidden angularVelocity_1 -0.4943790715513756 0.09073142432350566 -2.642388790068648
+  hidden translation_2 0.02600000000000009 0.02 0
+  hidden rotation_2 1 0 0 4.207220667288303
+  hidden linearVelocity_2 0.05768540701398452 -4.4643409555785933e-07 -0.010791614728028684
+  hidden angularVelocity_2 -0.5415970721931739 0.09081590908087236 -2.8948120844203697
+  translation -0.10703127662541825 -3.193614067240752e-05 0.2192911491636361
+  rotation -0.0015916717054649248 0.9999978787289752 -0.0013073326783785257 -1.3850993148493291
+}
+Solid {
+  translation 0 992265.867615052 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry DEF BALL_GEOMETRY Sphere {
+        radius 0.05
+        subdivision 3
+      }
+    }
+  ]
+  boundingObject USE BALL_GEOMETRY
+  physics Physics {
+  }
+  linearVelocity 0 -67.64975999999969 0
+}

@@ -1,0 +1,38 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.004133023436413819 0.9999280264441929 0.011263216622958278 3.329387719725049
+  position -1.7986981057021285 1.0701746549578384 -8.305769263593037
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 10 10
+  floorTileSize 1 1
+}
+Robot {
+  children [
+    DEF body Transform {
+      translation 0 0.4 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.929412 0.831373 0
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.8 0.4 0.8
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject USE body
+  physics Physics {
+  }
+}
