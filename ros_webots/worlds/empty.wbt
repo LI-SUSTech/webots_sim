@@ -1,0 +1,181 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+  contactProperties [
+    ContactProperties {
+      coulombFriction [
+        0.5
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.09055317827318937 -0.9951685093537636 0.03794416813203639 0.5781208216124273
+  position -1.2066210534710988 0.36954868089636594 2.0701847034771945
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 4 4
+}
+SimpleChair {
+  translation 0.72 0.91 0
+}
+OilBarrel {
+  translation 0 0.44 1.13
+}
+Robot {
+  translation 0.00024978658212641944 0.18889485537893172 -0.00013689287553116756
+  rotation 0.49253113590231107 0.012110461530614096 0.870210558938637 -0.0013784783782092827
+  children [
+    RobotisLds01 {
+      translation 0.26 0.12 0
+    }
+    Kinect {
+      translation -0.22 0.1 4.04581e-05
+      rotation 0 1 0 1.57089
+    }
+    Solid {
+      children [
+        DEF body Shape {
+          appearance PBRAppearance {
+            baseColor 0.937255 0.160784 0.160784
+            metalness 0
+          }
+          geometry Box {
+            size 0.6 0.2 0.35
+          }
+        }
+      ]
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 0.00029930886546392056
+        axis 0 0 1
+        anchor 0.2 -0.1 -0.205
+      }
+      device [
+        DEF wheel_1 RotationalMotor {
+          name "wheel_1"
+        }
+      ]
+      endPoint Solid {
+        translation 0.1999999999999993 -0.1 -0.205
+        rotation 0.9999999776013936 0.0001496544304971523 0.00014966884692313985 1.5707000223985998
+        children [
+          DEF wheel Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.05
+              radius 0.1
+            }
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE wheel
+        physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 6.91643307724405e-08
+        axis 0 0 1
+        anchor 0.2 -0.1 0.205
+      }
+      device [
+        DEF wheel_2 RotationalMotor {
+          name "wheel_2"
+        }
+      ]
+      endPoint Solid {
+        translation 0.2 -0.1 0.205
+        rotation 0.9999999999999987 3.4582165307711884e-08 3.4585496657315965e-08 1.5706999999999944
+        children [
+          Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.05
+              radius 0.1
+            }
+          }
+        ]
+        name "solid(2)"
+        boundingObject USE wheel
+        physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position -3.390516384224019e-08
+        axis 0 0 1
+        anchor -0.2 -0.1 0.205
+      }
+      device [
+        DEF wheel_3 RotationalMotor {
+          name "wheel_3"
+        }
+      ]
+      endPoint Solid {
+        translation -0.2 -0.1 0.205
+        rotation 0.9999999999999997 -1.6952581921120092e-08 -1.6954214987657085e-08 1.5706999999999998
+        children [
+          Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.05
+              radius 0.1
+            }
+          }
+        ]
+        name "solid(3)"
+        boundingObject USE wheel
+        physics Physics {
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position -3.436863504902021e-08
+        axis 0 0 1
+        anchor -0.2 -0.1 -0.205
+      }
+      device [
+        DEF wheel_4 RotationalMotor {
+          name "wheel_4"
+        }
+      ]
+      endPoint Solid {
+        translation -0.2 -0.1 -0.205
+        rotation 0.9999999999999997 -1.71843175245101e-08 -1.7185972914470217e-08 1.5706999999999998
+        children [
+          Shape {
+            appearance PBRAppearance {
+            }
+            geometry Cylinder {
+              height 0.05
+              radius 0.1
+            }
+          }
+        ]
+        name "solid(4)"
+        boundingObject USE wheel
+        physics Physics {
+        }
+      }
+    }
+  ]
+  boundingObject USE body
+  physics Physics {
+  }
+  controller "diff_test"
+  controllerArgs [
+    "--name=first_webot"
+  ]
+}
