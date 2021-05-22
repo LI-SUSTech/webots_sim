@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="finalversion4_3">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="3.29597460435593E-17 0.000233612897587883 0.178266718728694"
+        rpy="0 0 0" />
+      <mass
+        value="1" />
+      <inertia
+        ixx="36.9870768479637"
+        ixy="-6.80667060314818E-16"
+        ixz="-5.17518672807476E-16"
+        iyy="37.0131407360482"
+        iyz="-0.0111750448599188"
+        izz="63.2623891086206" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="-0.0506726048875944 -1.73472347597681E-17 0.21297958461285"
+        rpy="0 0 0" />
+      <mass
+        value="0.01" />
+      <inertia
+        ixx="2.63143000374802"
+        ixy="4.44089209850063E-16"
+        ixz="0.343894371138613"
+        iyy="2.57654659450065"
+        iyz="-5.55111512312578E-17"
+        izz="1.41861567738603" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.52"
+      rpy="0 0 2.11724462502694" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="1"
+      friction="10" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.35415467668599 -2.54222278450733E-07 0.057362303052139"
+        rpy="0 0 0" />
+      <mass
+        value="0.01" />
+      <inertia
+        ixx="0.231552485537566"
+        ixy="2.19239143138539E-07"
+        ixz="0.00141117554498872"
+        iyy="2.81209525326636"
+        iyz="1.26320622490567E-06"
+        izz="2.96989780451339" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="continuous">
+    <origin
+      xyz="0 0 0.47999999999999"
+      rpy="1.5707963267949 -1.16651876880751 1.57079632679489" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="1"
+      friction="10" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="0.314091993400371 3.06727300225518E-07 -0.0289618491853043"
+        rpy="0 0 0" />
+      <mass
+        value="0.01" />
+      <inertia
+        ixx="0.207666797561518"
+        ixy="4.90024452855231E-07"
+        ixz="-0.133161716048315"
+        iyy="1.14328157904302"
+        iyz="-8.22630084968365E-07"
+        izz="1.15777925554486" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="continuous">
+    <origin
+      xyz="0.8 0 0"
+      rpy="0 0 2.5173739408939" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="1"
+      friction="10" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="0.103310577966523 -5.82867087928207E-16 -2.66453525910038E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.01" />
+      <inertia
+        ixx="0.0381860695974076"
+        ixy="9.96381796514179E-17"
+        ixz="2.39391839684799E-16"
+        iyy="0.0700238670581641"
+        iyz="-7.0906822080552E-17"
+        izz="0.0633303462786921" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="continuous">
+    <origin
+      xyz="0.646297357769649 0 0"
+      rpy="1.50659940952541 0 0" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="1"
+      friction="10" />
+  </joint>
+  <link
+    name="link5">
+    <inertial>
+      <origin
+        xyz="2.15702141675989E-07 0.072775247420554 -1.16939336436417E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.01" />
+      <inertia
+        ixx="0.00904372933412581"
+        ixy="1.04889739274239E-09"
+        ixz="5.79406874692476E-10"
+        iyy="0.00166004417175234"
+        iyz="2.66092506340763E-09"
+        izz="0.00857937526481602" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="continuous">
+    <origin
+      xyz="0.233702642230346 0 0"
+      rpy="0 0 -2.10323491719788" />
+    <parent
+      link="link4" />
+    <child
+      link="link5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="1"
+      friction="10" />
+  </joint>
+  <link
+    name="gripper_base">
+    <inertial>
+      <origin
+        xyz="-7.11582348600359E-10 -2.52292742253246E-10 -0.0166619761634657"
+        rpy="0 0 0" />
+      <mass
+        value="0.01" />
+      <inertia
+        ixx="0.00106055902789457"
+        ixy="-7.25023998899687E-11"
+        ixz="-2.03006267124241E-11"
+        iyy="0.000854193232227578"
+        iyz="-6.55167239904664E-12"
+        izz="0.00126987068873742" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/gripper_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/gripper_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="continuous">
+    <origin
+      xyz="0 0.23663357272614 0"
+      rpy="1.57079632679489 0.828298993935725 0" />
+    <parent
+      link="link5" />
+    <child
+      link="gripper_base" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="100"
+      velocity="1" />
+    <dynamics
+      damping="1"
+      friction="10" />
+  </joint>
+  <link
+    name="finger1">
+    <inertial>
+      <origin
+        xyz="0.0595875944457821 0.0370966264172308 0.0099999806362594"
+        rpy="0 0 0" />
+      <mass
+        value="0.01" />
+      <inertia
+        ixx="0.000118255940768659"
+        ixy="6.27824578382265E-07"
+        ixz="8.62131388821392E-12"
+        iyy="1.72979679718976E-05"
+        iyz="2.69634851889395E-10"
+        izz="0.000102066181127375" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/finger1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/finger1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="finger_joint1"
+    type="prismatic">
+    <origin
+      xyz="0.012183 0.01 -0.050463"
+      rpy="-1.5708 0 3.1416" />
+    <parent
+      link="gripper_base" />
+    <child
+      link="finger1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.04"
+      upper="0"
+      effort="10"
+      velocity="1" />
+    <dynamics
+      damping="1"
+      friction="10" />
+  </joint>
+  <link
+    name="finger2">
+    <inertial>
+      <origin
+        xyz="0.00740480558176582 0.0370961219264144 0.00999998685514458"
+        rpy="0 0 0" />
+      <mass
+        value="0.01" />
+      <inertia
+        ixx="0.000118254033727594"
+        ixy="6.27789951832078E-07"
+        ixz="8.16830871130524E-12"
+        iyy="1.72978416044394E-05"
+        iyz="2.28492767874362E-10"
+        izz="0.000102064409317908" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/finger2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/finger2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="finger_joint2"
+    type="prismatic">
+    <origin
+      xyz="0 -0.0100000189305697 -0.0504630375736637"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="gripper_base" />
+    <child
+      link="finger2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0.04"
+      effort="10"
+      velocity="1" />
+    <dynamics
+      damping="1"
+      friction="10" />
+  </joint>
+  <link
+    name="wheel1">
+    <inertial>
+      <origin
+        xyz="0 0 -0.0333333333333334"
+        rpy="0 0 0" />
+      <mass
+        value="0.5" />
+      <inertia
+        ixx="0.00578709772222778"
+        ixy="2.49477672745993E-18"
+        ixz="-6.61744490042469E-21"
+        iyy="0.00578709772222778"
+        iyz="2.50801161726078E-18"
+        izz="0.0100677149520705" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.06" radius="0.05"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.06" radius="0.05"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_joint1"
+    type="continuous">
+    <origin
+      xyz="-0.27333 0.3 0"
+      rpy="0 1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="10000"
+      velocity="100" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="wheel2">
+    <inertial>
+      <origin
+        xyz="0 0 0.0333333333333333"
+        rpy="0 0 0" />
+      <mass
+        value="0.5" />
+      <inertia
+        ixx="0.00578709772222778"
+        ixy="-2.87584849590545E-18"
+        ixz="-3.36349085405109E-20"
+        iyy="0.00578709772222778"
+        iyz="1.24031855443205E-19"
+        izz="0.0100677149520705" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.06" radius="0.05"/>
+          
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.06" radius="0.05"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_joint2"
+    type="continuous">
+    <origin
+      xyz="0.27333 0.3 0"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="10000"
+      velocity="100" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="wheel3">
+    <inertial>
+      <origin
+        xyz="0 0 -0.0333333333333333"
+        rpy="0 0 0" />
+      <mass
+        value="0.7" />
+      <inertia
+        ixx="0.00578709772222778"
+        ixy="3.59652960459228E-18"
+        ixz="1.35916114400119E-19"
+        iyy="0.00578709772222778"
+        iyz="-2.24006002875615E-18"
+        izz="0.0100677149520705" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.06" radius="0.05"/>
+      </geometry>
+     
+
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.06" radius="0.05"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_joint3"
+    type="continuous">
+    <origin
+      xyz="-0.27333 -0.3 0"
+      rpy="0 1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="100"
+      velocity="1000" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="wheel4">
+    <inertial>
+      <origin
+        xyz="5.55111512312578E-17 -5.55111512312578E-17 0.0333333333333333"
+        rpy="0 0 0" />
+      <mass
+        value="0.7" />
+      <inertia
+        ixx="0.00578709772222778"
+        ixy="-3.46505958598463E-18"
+        ixz="-3.49272418202668E-20"
+        iyy="0.00578709772222779"
+        iyz="1.71639977104753E-19"
+        izz="0.0100677149520705" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.06" radius="0.05"/>
+      </geometry>
+     
+
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.06" radius="0.05"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_joint4"
+    type="continuous">
+    <origin
+      xyz="0.27333 -0.3 0"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="100"
+      velocity="1000" />
+    <dynamics
+      damping="0"
+      friction="0" />
+  </joint>
+  <link
+    name="kinect">
+    <inertial>
+      <origin
+        xyz="-0.00683730325363874 0.00422438365608269 0.0318215302232761"
+        rpy="0 0 0" />
+      <mass
+        value="0.01" />
+      <inertia
+        ixx="0.000269654876134721"
+        ixy="9.35636343841002E-07"
+        ixz="-4.36270203311183E-08"
+        iyy="0.00298640052288096"
+        iyz="5.71452279480483E-06"
+        izz="0.00311136637041617" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/kinect.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/kinect.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="kinect_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0066313 0.50923 0.33325"
+      rpy="0 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="kinect" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="lizar">
+    <inertial>
+      <origin
+        xyz="-0.00748346988333637 0.0106681277328402 9.1926111087548E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.01" />
+      <inertia
+        ixx="0.000614917940454091"
+        ixy="0.00015824302591117"
+        ixz="8.01984318973051E-07"
+        iyy="0.00109815200027136"
+        iyz="3.09162986587591E-06"
+        izz="0.000960697335617223" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/lizar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://finalversion4_3/meshes/lizar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lizar_joint"
+    type="fixed">
+    <origin
+      xyz="0.00238187032149393 0.468840905119507 0.5466"
+      rpy="1.5707963267949 0 1.64709017011615" />
+    <parent
+      link="base_link" />
+    <child
+      link="lizar" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+
+       <transmission name="wheel3_trans">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="wheel_joint3" />
+            <actuator name="wheel3_motor">
+                <hardwareInterface>VelocityJointInterface</hardwareInterface>
+                <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+        </transmission>
+       
+       <transmission name="wheel4_trans">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="wheel_joint4" />
+            <actuator name="wheel4_motor">
+                <hardwareInterface>VelocityJointInterface</hardwareInterface>
+                <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+        </transmission>
+
+  <gazebo>
+   <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+    <updateRate>100.0</updateRate>
+    <robotNamespace>/</robotNamespace>
+    <leftFrontJoint>wheel_joint1</leftFrontJoint>
+    <rightFrontJoint>wheel_joint2</rightFrontJoint>
+    <leftRearJoint>wheel_joint3</leftRearJoint>
+    <rightRearJoint>wheel_joint4</rightRearJoint>
+    <wheelSeparation>0.613</wheelSeparation>
+    <wheelDiameter>0.2</wheelDiameter>
+    <robotBaseFrame>base_link</robotBaseFrame>
+    <torque>10000</torque>
+    <topicName>cmd_vel</topicName>
+    <broadcastTF>false</broadcastTF>
+   </plugin>
+ </gazebo>
+
+    <gazebo reference="wheel3">
+        <mu1>1</mu1>     
+        <mu2>1</mu2>
+    </gazebo>
+
+    <gazebo reference="wheel4">
+        <mu1>1</mu1>     
+        <mu2>1</mu2>
+    </gazebo>
+
+
+<gazebo reference="lizar">
+    <sensor type="ray" name="head_hokuyo_sensor">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>true</visualize>
+      <update_rate>5</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>360</samples>
+            <resolution>1</resolution>
+            <min_angle>-1.570796</min_angle>
+            <max_angle>1.570796</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.10</min>
+          <max>30.0</max>
+          <resolution>0.01</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <!-- Noise parameters based on published spec for Hokuyo laser
+               achieving "+-30mm" accuracy at range < 10m.  A mean of 0.0m and
+               stddev of 0.01m will put 99.7% of samples within 0.03m of the true
+               reading. -->
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
+        <topicName>/scan</topicName>
+        <frameName>lizar</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+</robot>
